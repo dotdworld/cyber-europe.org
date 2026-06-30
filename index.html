@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Cyber Europe</title>
+
+  <meta property="og:title" content="Cyber Europe – Cyber Threat Intelligence & Internet Research">
+  <meta property="og:description" content="Independent cyber threat intelligence, internet measurement and security research platform.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cyber-europe.org/">
+  <meta property="og:image" content="https://cyber-europe.org/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cyber Europe">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-gray-950 text-gray-100 font-sans">
+
+<header class="border-b border-gray-800">
+  <nav class="container mx-auto flex flex-wrap justify-between items-center p-4">
+
+    <a href="index.html" class="text-2xl font-bold text-blue-500">
+      Cyber Europe
+    </a>
+
+    <button class="block md:hidden text-gray-300" id="menuToggle">
+      ☰
+    </button>
+
+    <ul id="menu" class="hidden md:flex space-x-6 text-sm w-full md:w-auto mt-4 md:mt-0">
+      <li><a href="index.html" class="text-blue-400 block py-2 md:py-0">Home</a></li>
+      <li><a href="research.html" class="hover:text-blue-400 block py-2 md:py-0">Research</a></li>
+      <li><a href="sensors.html" class="hover:text-blue-400 block py-2 md:py-0">Sensors</a></li>
+      <li><a href="projects.html" class="hover:text-blue-400 block py-2 md:py-0">Projects</a></li>
+      <li><a href="blog.html" class="hover:text-blue-400 block py-2 md:py-0">Blog</a></li>
+      <li><a href="contact.html" class="hover:text-blue-400 block py-2 md:py-0">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<section class="container mx-auto text-center py-20 px-6">
+
+  <h1 class="text-4xl sm:text-5xl font-bold mb-6 text-white">
+    Cyber Threat Intelligence & Internet Research
+  </h1>
+
+  <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-10">
+    Cyber Europe is an independent cybersecurity research project focused on internet
+    measurement, cyber threat intelligence, threat hunting and open-source security
+    research. The platform is being developed to collect publicly available internet
+    metadata, analyse emerging threats and provide practical intelligence for defenders.
+  </p>
+
+  <a href="about.html"
+     class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold">
+      Learn More
+  </a>
+
+</section>
+
+<section class="container mx-auto px-6 py-16">
+
+<h2 class="text-3xl font-semibold mb-8">
+Current Focus
+</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-gray-900 rounded-xl p-6 border border-gray-800">
+
+<h3 class="text-xl font-semibold mb-3 text-blue-400">
+Cyber Threat Intelligence
+</h3>
+
+<p class="text-gray-400">
+Building an independent intelligence platform by combining open-source feeds,
+public telemetry and original research.
+</p>
+
+</div>
+
+<div class="bg-gray-900 rounded-xl p-6 border border-gray-800">
+
+<h3 class="text-xl font-semibold mb-3 text-blue-400">
+Internet Sensors
+</h3>
+
+<p class="text-gray-400">
+Developing custom sensors capable of collecting publicly available network,
+protocol and certificate metadata for security analysis.
+</p>
+
+</div>
+
+<div class="bg-gray-900 rounded-xl p-6 border border-gray-800">
+
+<h3 class="text-xl font-semibold mb-3 text-blue-400">
+Research Projects
+</h3>
+
+<p class="text-gray-400">
+Creating practical cybersecurity tools, dashboards and educational resources
+for researchers and defenders.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container mx-auto px-6 py-16">
+
+<h2 class="text-3xl font-semibold mb-8">
+Project Status
+</h2>
+
+<div class="bg-gray-900 rounded-xl border border-gray-800 p-8">
+
+<p class="text-gray-400 leading-8">
+
+Cyber Europe is currently under active development.
+
+The first public release will include custom internet sensors,
+threat intelligence feeds, research articles and open-source
+projects related to cybersecurity.
+
+Additional services, dashboards and APIs will be introduced
+progressively as the platform evolves.
+
+</p>
+
+</div>
+
+</section>
+
+<footer class="border-t border-gray-800 text-center text-gray-500 py-8 text-sm">
+
+<p>
+© 2026 Cyber-Europe.org
+</p>
+
+<p class="mt-2">
+
+<a href="https://www.leonoramilisa.com"
+target="_blank"
+class="hover:text-blue-400">
+
+LeonoraMilisa.com
+
+</a>
+
+</p>
+
+</footer>
+
+<script>
+
+const menuBtn=document.getElementById("menuToggle");
+const menu=document.getElementById("menu");
+
+menuBtn?.addEventListener("click",()=>{
+
+menu.classList.toggle("hidden");
+
+});
+
+</script>
+
+</body>
+</html>
